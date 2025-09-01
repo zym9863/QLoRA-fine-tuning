@@ -161,7 +161,7 @@ class ModelConfig:
             warmup_ratio=0.03,
             group_by_length=True,
             lr_scheduler_type="constant",
-            report_to="tensorboard",
+            report_to="none",  # 禁用TensorBoard（避免依赖问题）
             save_total_limit=3,
             # 禁用评估策略（适用于简单的指令微调）
             eval_strategy="no",
