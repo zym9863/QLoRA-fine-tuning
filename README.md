@@ -1,3 +1,5 @@
+[English Version](README-EN.md)
+
 # QLoRA指令微调系统
 
 基于QLoRA技术的语言模型指令微调实现，支持google/gemma-3-4b-it模型和BelleGroup/train_0.5M_CN数据集。
