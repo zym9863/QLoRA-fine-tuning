@@ -163,6 +163,9 @@ class ModelConfig:
             lr_scheduler_type="constant",
             report_to="tensorboard",
             save_total_limit=3,
+            # 设置评估策略与保存策略匹配
+            eval_strategy="steps",
+            eval_steps=500,
             load_best_model_at_end=True,
             metric_for_best_model="loss",
             greater_is_better=False,
