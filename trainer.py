@@ -73,11 +73,11 @@ class QLoRATrainer:
         Returns:
             分词后的结果
         """
-        # 分词
+        # 分词，启用padding和truncation确保批次中所有样本长度一致
         tokenized = tokenizer(
             examples["text"],
             truncation=True,
-            padding=False,
+            padding='max_length',
             max_length=512,
             return_overflowing_tokens=False,
         )
@@ -113,10 +113,11 @@ class QLoRATrainer:
             remove_columns=dataset.column_names,
         )
 
-        # 4. 创建数据整理器
+        # 4. 创建数据整理器，启用padding处理不同长度的序列
         data_collator = DataCollatorForLanguageModeling(
             tokenizer=tokenizer,
             mlm=False,  # 不使用掩码语言建模
+            pad_to_multiple_of=8,  # 填充到8的倍数，提高训练效率
         )
 
         # 5. 创建训练器
