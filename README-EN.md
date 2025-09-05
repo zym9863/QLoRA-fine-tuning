@@ -8,7 +8,7 @@ QLoRA-based language model instruction fine-tuning implementation, supporting go
 
 - ✅ Support for QLoRA (4-bit quantization + LoRA) efficient fine-tuning
 - ✅ Use google/gemma-3-4b-it pre-trained model
-- ✅ Automatically sample 500 data entries from BelleGroup/train_0.5M_CN dataset
+- ✅ Automatically sample 2000 data entries from BelleGroup/train_0.5M_CN dataset
 - ✅ Complete command-line interface
 - ✅ Modular design, easy to extend
 - ✅ Includes testing and validation scripts
@@ -90,7 +90,7 @@ python train.py \
 
 ### Automatic Data Format
 
-The program will automatically sample 500 data entries from the BelleGroup/train_0.5M_CN dataset and format them for instruction fine-tuning.
+The program will automatically sample 2000 data entries from the BelleGroup/train_0.5M_CN dataset and format them for instruction fine-tuning.
 
 ### Custom Data Format
 

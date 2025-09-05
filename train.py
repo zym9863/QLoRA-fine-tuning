@@ -33,7 +33,7 @@ def parse_arguments():
         "--data_path",
         type=str,
         default=None,
-        help="训练数据路径（JSON格式）。如果不指定，将自动从BelleGroup/train_0.5M_CN下载500条数据"
+        help="训练数据路径（JSON格式）。如果不指定，将自动从BelleGroup/train_0.5M_CN下衳2000条数据"
     )
 
     parser.add_argument(
@@ -114,7 +114,7 @@ def print_training_info(args):
     print("=" * 60)
     print("QLoRA指令微调训练配置")
     print("=" * 60)
-    print(f"数据路径:     {args.data_path if args.data_path else '自动下载BelleGroup/train_0.5M_CN(500条)'}")
+    print(f"数据路径:     {args.data_path if args.data_path else '自动下载BelleGroup/train_0.5M_CN(2000条)'}")
     print(f"模型路径:     {args.model_path}")
     print(f"训练轮数:     {args.epochs}")
     print(f"批次大小:     {args.batch_size}")

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 数据处理模块
-从BelleGroup/train_0.5M_CN数据集中选取500条数据并格式化为指令微调格式
+从BelleGroup/train_0.5M_CN数据集中选取2000条数据并格式化为指令微调格式
 """
 
 import json
@@ -13,7 +13,7 @@ from typing import List, Dict, Any
 class DataProcessor:
     """数据处理器，负责加载和预处理训练数据"""
 
-    def __init__(self, dataset_name: str = "BelleGroup/train_0.5M_CN", sample_size: int = 500):
+    def __init__(self, dataset_name: str = "BelleGroup/train_0.5M_CN", sample_size: int = 2000):
         """
         初始化数据处理器
 

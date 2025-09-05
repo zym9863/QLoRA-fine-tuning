@@ -8,7 +8,7 @@
 
 - ✅ 支持QLoRA（4-bit量化 + LoRA）高效微调
 - ✅ 使用google/gemma-3-4b-it预训练模型
-- ✅ 自动从BelleGroup/train_0.5M_CN数据集采样500条数据
+- ✅ 自动从BelleGroup/train_0.5M_CN数据集采朷2000条数据
 - ✅ 完整的命令行接口
 - ✅ 模块化设计，易于扩展
 - ✅ 包含测试和验证脚本
@@ -90,7 +90,7 @@ python train.py \
 
 ### 自动数据格式
 
-程序会自动从BelleGroup/train_0.5M_CN数据集中采样500条数据，并格式化为指令微调格式。
+程序会自动从BelleGroup/train_0.5M_CN数据集中采朷2000条数据，并格式化为指令微调格式。
 
 ### 自定义数据格式
 
